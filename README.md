@@ -17,7 +17,7 @@ This project helped me gain hands-on experience with:
 - Basic Web Deployment
 
 ## **Architecture**
-![](./images/screenshotarc.png)
+![](screenshotarc.png)
 
 ## **Technologies Used**
 - AWS EC2
@@ -44,25 +44,25 @@ This project helped me gain hands-on experience with:
 ### **1. Launch EC2 Instance**
 Created an EC2 instance using Amazon Linux 2023 and t3.micro instance type.
 
-![](./images/screenshot1.png)
+![](screenshot1.png)
 
 ### **2. Connect to EC2**
 Connected securely using SSH and key pair authentication.
 
-![](./images/screenshot2.png)
+![](screenshot2.png)
 
 ### **3. Update Server**
 Updated all system packages before deployment.
 ```
 sudo yum update -y
 ```
-![](./images/screenshot3.png)
+![](screenshot3.png)
 ### **4. Install Nginx**
 Installed Nginx web server.
 ```
 sudo yum install nginx -y
 ```
-![](./images/screenshot4.png)
+![](screenshot4.png)
 ### **5. Start Nginx Service**
 Started and enabled the Nginx service.
 ```
@@ -73,14 +73,14 @@ Checked service status.
 ```
 sudo systemctl status nginx
 ```
-![](./images/screenshot5.png)
+![](screenshot5.png)
 ### **6. Create Website Directory**
 Created a dedicated directory for the portfolio website.
 ```
 cd /usr/share/nginx/html 
 sudo mkdir portfolio-website
 ```
-![](./images/screenshot7.png)
+![](screenshot7.png)
 ### **7. Create Website Files**
 Created:
 
@@ -90,13 +90,13 @@ Created:
 
 using the Vim editor.
 
-![](./images/screenshot8.png)
+![](screenshot8.png)
 ### **8. Deploy Website**
 Placed all website files inside the Nginx web root directory and served them through Nginx.
 ### **9. Access Website**
 Accessed the website using the EC2 Public IPv4 address.
 
-![](./images/screenshot9.png)
+![](screenshot9.png)
 
 ## **Learning Outcomes**
 Through this project, I learned:
